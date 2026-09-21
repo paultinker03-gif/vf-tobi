@@ -17,15 +17,17 @@
 
   :root {
     /* page chrome */
-    --page-bg: #FAFAFA;
+    /* the chrome sits on a pink tint mixed from the brand red, so the device
+       reads as an object placed on a surface rather than a page edge */
+    --page-bg: #FDF2F2;
     --page-ink: #0E0E0E;
     --page-muted: #5A5D5E;
     --page-faint: #6B6B6B;
-    --page-line: #E8E8E8;
+    --page-line: #F2DEDE;
     --page-card: #FFFFFF;
-    --page-sunken: #F0F0F0;
+    --page-sunken: #F8E9E9;
     --chip-bg: #FFFFFF;
-    --stage-bg: #F1F1F1;
+    --stage-bg: #F8E6E6;
     /* kit tokens — the product UI keeps these in every theme */
     --vf-red: #E60000;
     --vf-red-press: #BD0000;
@@ -44,27 +46,27 @@
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --page-bg: #131313;
+      --page-bg: #171111;
       --page-ink: #F4F4F4;
       --page-muted: #A6A6A6;
       --page-faint: #8C8C8C;
-      --page-line: #2B2B2B;
-      --page-card: #1B1B1B;
-      --page-sunken: #232323;
-      --chip-bg: #1B1B1B;
-      --stage-bg: #1B1B1B;
+      --page-line: #331F1F;
+      --page-card: #201818;
+      --page-sunken: #281D1D;
+      --chip-bg: #201818;
+      --stage-bg: #241A1A;
     }
   }
   :root[data-theme="dark"] {
-    --page-bg: #131313;
+    --page-bg: #171111;
     --page-ink: #F4F4F4;
     --page-muted: #A6A6A6;
     --page-faint: #8C8C8C;
-    --page-line: #2B2B2B;
-    --page-card: #1B1B1B;
-    --page-sunken: #232323;
-    --chip-bg: #1B1B1B;
-    --stage-bg: #1B1B1B;
+    --page-line: #331F1F;
+    --page-card: #201818;
+    --page-sunken: #281D1D;
+    --chip-bg: #201818;
+    --stage-bg: #241A1A;
   }
 
   * { box-sizing: border-box; }
